@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חדר כושר בכפר עילבון - MIKE FIT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+        }
+
+        h1 {
+            color: #ff9900;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #ff9900;
+            outline: none;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e68a00;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 200px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/mpx305oai0gosoock4.png" alt="MIKE FIT Logo" class="logo">
+            <h1>ברוכים הבאים לחדר כושר בכפר עילבון</h1>
+        </header>
+
+        <main>
+            <section class="contact-info">
+                <h2>צור קשר</h2>
+                <p>טלפון: 04-XXXXXXX</p>
+                <p>כתובת: רחוב ראשי, כפר עילבון</p>
+                <p>שעות פתיחה: א'-ו' 06:00-22:00, שבת 08:00-20:00</p>
+
+                <form action="submit_form.php" method="post">
+                    <label for="name">שם:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">אימייל:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">הודעה:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">שלח</button>
+                </form>
+            </section>
+
+            <div class="section">
+                <h2>שיעורים זמינים</h2>
+                <ul>
+                    <li>יוגה - שני ורביעי בשעה 18:00</li>
+                    <li>אימון כוח - שלישי וחמישי בשעה 19:00</li>
+                    <li>אימון אירובי - שישי בשעה 10:00</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>עדויות מלקוחות</h2>
+                <p>"החדר כושר מצוין! צוות מקצועי ואווירה נהדרת!" - יוסי</p>
+                <p>"אני מאוד מרוצה מהשיעורים. הם באמת עוזרים לי לשמור על כושר!" - מרים</p>
+            </div>
+
+            <div class="section">
+                <h2>מבצעים מיוחדים</h2>
+                <p>הרשמה עכשיו וקבל 10% הנחה על המנוי הראשון!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 MIKE FIT - כל הזכויות שמורות.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
